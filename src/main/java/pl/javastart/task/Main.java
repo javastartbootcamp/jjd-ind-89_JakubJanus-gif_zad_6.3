@@ -7,14 +7,14 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        final int MAX_SIZE = 100;
+        final int Max_size = 100;
 
         System.out.print("Podaj liczbę wierszy (max 100): ");
         int rows = scanner.nextInt();
         System.out.print("Podaj liczbę kolumn (max 100): ");
         int cols = scanner.nextInt();
 
-        if (rows < 1 || rows > MAX_SIZE || cols < 1 || cols > MAX_SIZE) {
+        if (rows < 1 || rows > Max_size || cols < 1 || cols > Max_size) {
             System.out.println("Nieprawidłowe wymiary. Wprowadź liczby z przedziału 1-100.");
         }
         int[][] table = new int[rows][cols];
